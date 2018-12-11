@@ -1,0 +1,1 @@
+mysql -udjango -ptiger123 django < django.sql
