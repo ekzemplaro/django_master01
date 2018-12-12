@@ -1,0 +1,1 @@
+uwsgi --plugin http,python proj01.ini
