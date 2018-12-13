@@ -1,1 +1,4 @@
+#
+# uwsgi --plugin http,python3 proj01.ini
+#
 uwsgi --plugin http,python proj01.ini
