@@ -1,0 +1,12 @@
+[Unit]
+Description=uWSGI instance to serve myproject
+After=network.target
+
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/home/ubuntu/projects/django/django_master01/proj01
+ExecStart=/usr/bin/uwsgi --plugin http,python3 --ini proj01.ini
+
+[Install]
+WantedBy=multi-user.target
