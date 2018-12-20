@@ -2,6 +2,10 @@
 <html lang="ja">
 <head>
 <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
+{% load static %}
+<script src="{% static 'app01/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'app01/app01.js' %}"></script>
+<link rel="stylesheet" href="{% static 'app01/app01.css' %}">
 <title>app01</title>
 </head>
 <body>
@@ -9,9 +13,23 @@
 {{ hour }}時{{ minute }}分です。<br>
 {{ message | safe }}<p />
 <hr />
+<span class='green'>green</span>
+<span class='red'>red</span>
+<span class='blue'>blue</span>
+<hr />
 <a href="../accounts/logout/">Logout</a><p />
 <a href="../">Return</a><p />
+<hr />
+<div id="outarea_aa">outarea_aa</div>
+<div id="outarea_bb">outarea_bb</div>
+<div id="outarea_cc">outarea_cc</div>
+<div id="outarea_dd">outarea_dd</div>
+<div id="outarea_ee">outarea_ee</div>
+<div id="outarea_ff">outarea_ff</div>
+<div id="outarea_gg">outarea_gg</div>
+<div id="outarea_hh">outarea_hh</div>
+<hr />
 app01.html<p />
-Dec/19/2018 PM 14:34<p />
+Dec/20/2018 AM 11:17<p />
 </body>
 </html>
