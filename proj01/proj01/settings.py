@@ -129,4 +129,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATIC_ROOT = '/var/www/static/'
+
 LOGIN_REDIRECT_URL = '/'
