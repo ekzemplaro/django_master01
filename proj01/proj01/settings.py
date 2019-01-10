@@ -124,7 +124,7 @@ LOGIN_REDIRECT_URL = '/'
 DEBUG = False
 DEBUG = True
 
-#try:
-#    from .local_settings import *
-#except ImportError:
-#    pass
+try:
+    from .local_settings import *
+except ImportError:
+    pass
