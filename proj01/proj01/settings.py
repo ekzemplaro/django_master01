@@ -115,16 +115,16 @@ STATIC_URL = '/static/'
 LOGIN_REDIRECT_URL = '/'
 
 
-import dj_database_url
-DATABASES = {}
-DATABASES['default'] = dj_database_url.config()
+#import dj_database_url
+#DATABASES = {}
+#DATABASES['default'] = dj_database_url.config()
 
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+#SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 DEBUG = False
 DEBUG = True
 
-try:
-    from .local_settings import *
-except ImportError:
-    pass
+#try:
+#    from .local_settings import *
+#except ImportError:
+#    pass
