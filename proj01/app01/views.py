@@ -3,8 +3,10 @@ from datetime import datetime
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
+from django.views.decorators.clickjacking import xframe_options_exempt
 
-@login_required
+# @login_required
+@xframe_options_exempt
 def index(request):
 	message = ""
 	message += 'app01 からのメッセージです。<br />'
