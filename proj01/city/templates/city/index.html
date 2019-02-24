@@ -1,0 +1,37 @@
+{% load static %}
+<!doctype html>
+<html lang="ja">
+<head>
+<link rel="stylesheet"
+ href="{% static 'city/css/city.css' %}">
+<title>{{ title }}</title>
+</head>
+<body>
+<p>{{message|safe}}</p>
+<a href="create/">Create</a><p />
+<table>
+<tr>
+	<th>key</th>
+	<th>name</th>
+	<th>population</th>
+	<th>towns</th>
+	<th>date_mod</th>
+	<th></th>
+	<th></th>
+</tr>
+{% for item in data %}
+<tr>
+	<td>{{item.code}}</td>
+	<td>{{item.name}}</td>
+	<td>{{item.population}}</td>
+	<td>{{item.towns}}</td>
+	<td>{{item.date_mod}}</td>
+	<td><a href="{% url 'edit' item.code %}">Edit</a></td>
+	<td><a href="{% url 'delete' item.code %}">Delete</a></td>
+</tr>
+{% endfor %}
+</table>
+<hr />
+Feb/18/2019 AM 09:44<p />
+</body>
+</html>
